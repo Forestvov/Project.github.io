@@ -7,11 +7,6 @@
 
 //----------------------------------------------------------------- header start
 
-.content__line{
-    position: absolute;
-    left: 0;
-    right: 0;
-}
 .header{
     z-index: 100;
     background-color: $bg;
@@ -212,7 +207,7 @@
 //----------------------------------------------------------------- header end
 //----------------------------------------------------------------- menu__form start
 .menu__form {
-    position: absolute;
+    position: fixed;
     right: 0;
     height: 100vh;
     top: 0;
@@ -315,6 +310,20 @@
 }
 //----------------------------------------------------------------- menu__form end
 //----------------------------------------------------------------- drop__down start
+.faq__page{
+    .drop__down{
+        &.active{
+            .drop__down-bottom{
+                height: 100vh;
+            }
+        }
+    }
+    &.fixed{
+        .faq{
+            margin-top: 357px;
+        }
+    }
+}
 .drop__down {
     position: absolute;
     left: 0;
@@ -328,7 +337,7 @@
             height: 34vh;
         }
         .drop__down-bottom{
-            height: 100vh;
+            height: 54vh;
             transition-delay: .5s;
         }
         .drop__down-item{
@@ -447,7 +456,7 @@
         
     }
 }
-.main__right-circlelist{
+.main__right-circlelist,.setpage__right-circlelist{
     position: absolute;
     top: 366px;
     width: 70px;
@@ -600,7 +609,7 @@
 .setpage__inner {
     display: flex;
     align-items: center;
-
+    position: relative;
 }
 .setpage__left {
     max-width: 884px;
@@ -647,18 +656,15 @@
     border-radius: 10px;
     margin-left: 103px;
 }
-
+.setpage__right-circlelist{
+    right: -9px;
+    top: 196px;
+}
 //----------------------------------------------------------------- setpage end
 
 //----------------------------------------------------------------- faq start
-
-.faq {
-    margin-top: 83px;
-    position: relative;
-}
-.content.faq__page{
-
-
+.faq{
+    margin-top: 87px;
 }
 .faq__inner {
     display: flex;  
@@ -667,15 +673,14 @@
 }
 .accordion {
     max-width: 928px;
+    margin-bottom: 40px;
     width: 100%;
     li{
         display: block;
         background-color: #fff;
         box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
-        & + li{
-            margin-top: 24px;
-        }
+        margin-bottom: 24px;
     }
 }
 .accordion-header {
@@ -735,6 +740,28 @@
     }
     img{
         margin-right: 9px;
+    }
+}
+.headhesive{
+    z-index: 9999;
+    position: fixed;
+    background-color: $bg;
+    transform: translateY(-104%);
+    transition: all .5s ease;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+    .unlock,
+    .btn__discount{
+        background-color: #fff;
+    }
+    .header__inner{
+        border-color: transparent;
+    }
+    &.headhesive--stick{
+        transform: translateY(0);
+        background-color: #fff;
+        top: 0;
     }
 }
 

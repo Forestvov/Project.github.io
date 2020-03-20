@@ -24,8 +24,6 @@ gulp.task('script', function(){
         'node_modules/slick-carousel/slick/slick.js',
         'node_modules/lottie-web/build/player/lottie_light.js',
         'node_modules/lazy-line-painter/lib/lazy-line-painter-1.9.6.js',
-        'node_modules/headhesive/dist/headhesive.js',
-        'node_modules/swup/dist/swup.js',
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())

@@ -10,21 +10,19 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body data-barba="wrapper">
     <section class="content faq__page">
-        <div class="content__line"></div>
-        <header class="header" id="header">
+        <header class="header">
             <div class="container">
                 <div class="header__inner">
                     <a class="header-logo_icon" id="header-logo_icon" href="index.html"></a>
                     <div class="header__inner-left">
                         <nav class="menu">
-                            <li><a class="icon__sets" href="#">icon sets</a></li>
+                            <li><a class="icon__sets">icon sets</a></li>
                             <li><a href="about.html">About animation</a></li>
                             <li><a class="btn-active" href="#">Faq</a></li>
                         </nav>
                         <div class="header__btn-box">
-
                             <div class="unlock__box">
                                 <a class="unlock" href="#">unlock for $35\year</a>
                             </div>
@@ -58,7 +56,7 @@
                                 </div>
                             </div>
                             
-                            <a class="burger" href="#">
+                            <div class="burger" id="burger">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect class="burger__circle" x="1" y="1" width="38" height="38" rx="19" stroke="#CCCCCC"
@@ -66,7 +64,7 @@
                                     <path class="burger__line" d="M12 16L29 16" stroke="#39424B" stroke-width="2" stroke-linecap="round" />
                                     <path class="burger__line" d="M12 24L29 24" stroke="#39424B" stroke-width="2" stroke-linecap="round" />
                                 </svg>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -150,7 +148,7 @@
                 </p>
             </div>
         </div>
-        <section class="faq">
+        <section class="faq main__block">
             <div class="container">
                 <div class="faq__inner">
                     <ul class="accordion" data-accordion="open">
@@ -228,10 +226,12 @@
                         <li>
                             <div class="accordion-header">
                                 How and when i get new icons?
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 8H16" stroke="#383838" stroke-width="1.5"/>
-                                    <path d="M8 0L8 16" stroke="#383838" stroke-width="1.5"/>
-                                </svg>
+                                <div class="accordion__btn">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 8H16" stroke="#383838" stroke-width="1.5"/>
+                                        <path d="M8 0L8 16" stroke="#383838" stroke-width="1.5"/>
+                                    </svg> 
+                                </div>
                             </div>
                             <div class="accordion-body">
                                 <p>
@@ -261,10 +261,12 @@
                         <li>
                             <div class="accordion-header">
                                 Can I cancel my subscription?
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 8H16" stroke="#383838" stroke-width="1.5"/>
-                                    <path d="M8 0L8 16" stroke="#383838" stroke-width="1.5"/>
-                                </svg>
+                                <div class="accordion__btn">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 8H16" stroke="#383838" stroke-width="1.5"/>
+                                        <path d="M8 0L8 16" stroke="#383838" stroke-width="1.5"/>
+                                    </svg> 
+                                </div>
                             </div>
                             <div class="accordion-body">
                                 <p>
